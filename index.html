@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModelCode | Desenvolvimento de Software, Apps e Automação</title>
-  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
@@ -32,8 +30,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white">
 
-  <!-- Fundo Hexagonal de Rede Sutil -->
-  <div class="fixed inset-0 -z-10 bg-slate-950">
+  <div class="fixed inset-0 -z-10 bg-slate-950 pointer-events-none">
     <svg width="100%" height="100%">
       <pattern id="hexNetwork" width="100" height="100" patternUnits="userSpaceOnUse">
         <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0ZM50 0L50 100M93.3 25L6.7 75M93.3 75L6.7 25" stroke="rgba(34, 211, 238, 0.15)" stroke-width="0.5"/>
@@ -48,8 +45,7 @@
     </svg>
   </div>
 
-  <!-- Header -->
-  <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+  <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-40">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <svg class="h-8 w-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,13 +73,12 @@
         </svg>
         <span class="font-bold text-lg tracking-tight text-white font-montserrat">ModelCode</span>
       </div>
-      <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20o%20meu%20projeto." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 rounded-md hover:bg-cyan-300 transition duration-150 drop-shadow-[0_0_8px_#22d3ee]">
+      <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20ModelCode%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20t%C3%A9cnica%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 rounded-md hover:bg-cyan-300 transition duration-150 drop-shadow-[0_0_8px_#22d3ee]">
         Falar com Especialista
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main class="flex-grow">
     <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/80 text-xs font-semibold tracking-wide text-cyan-300 mb-8 shadow-[0_0_12px_rgba(34,211,238,0.2)]">
@@ -95,19 +90,18 @@
         Desenvolvimento de Apps, Sites e Painéis <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 filter drop-shadow-[0_0_15px_rgba(168,85,247,0.7)]">Sob Medida</span>.
       </h1>
       <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        Criamos soluções digitais completas para empresas e profissionais autônomos: sites de alta conversão, aplicativos intuitivos, painéis administrativos centralizados e automações de fluxo de trabalho.
+        Criamos soluções digitais completas para empresas e profissionais: sites de alta conversão, aplicativos móveis intuitivos, painéis administrativos centralizados e automações de fluxo de trabalho.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="#solucoes" class="px-6 py-3 rounded-md text-sm font-semibold border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
           Ver Soluções
         </a>
-        <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20o%20meu%20projeto." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-md text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7]">
+        <button onclick="openModal()" class="cursor-pointer px-6 py-3 rounded-md text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7]">
           Iniciar Meu Projeto
-        </a>
+        </button>
       </div>
     </section>
 
-    <!-- Soluções Técnicas -->
     <section id="solucoes" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-850">
       <div class="text-center mb-12">
         <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">O Que Construímos</h2>
@@ -115,7 +109,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1: Sites & Landing Pages -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
           <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">01 / Presença Digital</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Sites & Landing Pages</h3>
@@ -124,7 +117,6 @@
           </p>
         </div>
 
-        <!-- Card 2: Aplicativos Sob Medida -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)]">
           <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">02 / Mobilidade & Acesso</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Aplicativos Mobile & PWA</h3>
@@ -133,7 +125,6 @@
           </p>
         </div>
 
-        <!-- Card 3: Painéis Administrativos & Dashboards -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400/50 hover:bg-gradient-to-br hover:from-cyan-900/10 hover:to-purple-900/10 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
           <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">03 / Gestão Centralizada</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Painéis & Dashboards</h3>
@@ -142,7 +133,6 @@
           </p>
         </div>
 
-        <!-- Card 4: Automações de Processos -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)]">
           <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">04 / Produtividade & IA</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Automações & Scripts</h3>
@@ -153,24 +143,130 @@
       </div>
     </section>
 
-    <!-- Contato -->
     <section id="contato" class="max-w-4xl mx-auto px-6 py-16 text-center">
       <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-10 rounded-2xl">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Precisa de um site, app, painel ou automação?</h2>
         <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm">
           Descreva a operação ou o gargalo do seu negócio. Desenvolvemos a arquitetura ideal para colocar sua solução no ar rapidamente.
         </p>
-        <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20o%20meu%20projeto." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 rounded-md text-base font-bold text-slate-950 bg-green-500 hover:bg-green-400 transition-all drop-shadow-[0_0_15px_#22c55e]">
-          Iniciar Conversa via WhatsApp
-        </a>
+        <button onclick="openModal()" class="cursor-pointer inline-flex items-center gap-2 px-8 py-4 rounded-md text-base font-bold text-slate-950 bg-green-500 hover:bg-green-400 transition-all drop-shadow-[0_0_15px_#22c55e]">
+          Iniciar Diagnóstico Técnico
+        </button>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono">
     &copy; 2026 ModelCode. Todos os direitos reservados.
   </footer>
+
+  <div id="diagnosticModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-[0_0_35px_rgba(168,85,247,0.25)] text-left">
+      
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white transition p-1">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="mb-6">
+        <span class="text-xs font-bold tracking-wider uppercase text-cyan-400">Diagnóstico Rápido</span>
+        <h3 class="text-xl font-bold text-white mt-1">Estruture sua demanda</h3>
+        <p class="text-xs text-slate-400 mt-1">Preencha os dados abaixo para direcionarmos o diagnóstico direto ao seu WhatsApp.</p>
+      </div>
+
+      <form onsubmit="sendDiagnosticToWhatsApp(event)" class="space-y-4">
+        
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que você precisa desenvolver?</label>
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-cyan-400 cursor-pointer transition">
+              <input type="radio" name="projectType" value="Site / Landing Page" checked class="text-cyan-500 focus:ring-0">
+              <span class="text-slate-200">Site / Landing Page</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-purple-400 cursor-pointer transition">
+              <input type="radio" name="projectType" value="Aplicativo Mobile" class="text-purple-500 focus:ring-0">
+              <span class="text-slate-200">App Mobile / PWA</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-cyan-400 cursor-pointer transition">
+              <input type="radio" name="projectType" value="Painel / Dashboard" class="text-cyan-500 focus:ring-0">
+              <span class="text-slate-200">Painel / Sistema Web</span>
+            </label>
+            <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-purple-400 cursor-pointer transition">
+              <input type="radio" name="projectType" value="Automação de Processos" class="text-purple-500 focus:ring-0">
+              <span class="text-slate-200">Automação / Script</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label for="gargaloInput" class="block text-xs font-semibold text-slate-300 mb-1">2. Qual o principal problema ou objetivo a resolver?</label>
+          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso automatizar planilhas manuais ou criar um painel para clientes..." class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
+        </div>
+
+        <div>
+          <label for="prazoSelect" class="block text-xs font-semibold text-slate-300 mb-1">3. Qual a urgência do projeto?</label>
+          <select id="prazoSelect" class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 focus:outline-none focus:border-cyan-400 transition">
+            <option value="Urgente (início imediato)">Urgente (início imediato)</option>
+            <option value="Próximos 30 dias">Próximos 30 dias</option>
+            <option value="Apenas pesquisando / Planejando">Apenas pesquisando / Planejando</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3 mt-2 rounded-lg text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7] cursor-pointer">
+          Enviar Diagnóstico via WhatsApp &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      const modal = document.getElementById('diagnosticModal');
+      modal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('diagnosticModal');
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Fecha o modal ao clicar fora do conteúdo
+    document.getElementById('diagnosticModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Fecha ao pressionar ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    function sendDiagnosticToWhatsApp(event) {
+      event.preventDefault();
+
+      const type = document.querySelector('input[name="projectType"]:checked').value;
+      const gargalo = document.getElementById('gargaloInput').value.trim();
+      const prazo = document.getElementById('prazoSelect').value;
+
+      const message = `Olá! Preenchi o diagnóstico no site da ModelCode:\n\n` +
+                      `📌 *Demanda:* ${type}\n` +
+                      `⚠️ *Gargalo/Objetivo:* ${gargalo}\n` +
+                      `⏱️ *Prazo:* ${prazo}\n\n` +
+                      `Gostaria de avaliar a viabilidade técnica e proposta.`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/5551995738595?text=${encodedMessage}`;
+
+      window.open(whatsappUrl, '_blank');
+      closeModal();
+    }
+  </script>
 
 </body>
 </html>
