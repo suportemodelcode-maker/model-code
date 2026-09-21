@@ -2,7 +2,7 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ModelCode | Desenvolvimento de Software, Apps e Automação</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,8 @@
       mask-composite: exclude;
       filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.5));
     }
+    /* Previne zoom adicional no input no iOS */
+    input, textarea, select { font-size: 16px !important; }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white relative">
@@ -231,12 +233,12 @@
 
         <div>
           <label for="gargaloInput" class="block text-xs font-semibold text-slate-300 mb-1">2. Qual o principal problema ou objetivo a resolver?</label>
-          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para a minha barbearia com agendamento..." class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
+          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para a minha barbearia com agendamento..." class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
         </div>
 
         <div>
           <label for="prazoSelect" class="block text-xs font-semibold text-slate-300 mb-1">3. Qual a urgência do projeto?</label>
-          <select id="prazoSelect" class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 focus:outline-none focus:border-cyan-400 transition">
+          <select id="prazoSelect" class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 focus:outline-none focus:border-cyan-400 transition">
             <option value="Urgente (início imediato)">Urgente (início imediato)</option>
             <option value="Próximos 30 dias">Próximos 30 dias</option>
             <option value="Apenas a pesquisar / Planear">Apenas a pesquisar / Planear</option>
@@ -282,13 +284,10 @@
       const gargalo = document.getElementById('gargaloInput').value.trim();
       const prazo = document.getElementById('prazoSelect').value;
 
-      // Montando a mensagem usando template literals do JS (garante compatibilidade total e saltos de linha perfeitos)
       const rawMessage = `🚀 *NOVO PROJETO | ModelCode*\n\n💻 *Demanda:* ${type}\n🎯 *Objetivo:* ${gargalo}\n⏳ *Prazo:* ${prazo}\n\nOlá! Gostaria de avaliar a viabilidade técnica e proposta.`;
 
-      // Transformando tudo em URL segura após o JS já ter interpretado os emojis
       const encodedText = encodeURIComponent(rawMessage);
 
-      // Usando api.whatsapp.com que lida muito melhor com textos complexos do que o wa.me
       const whatsappUrl = `https://api.whatsapp.com/send?phone=5551995738595&text=${encodedText}`;
 
       window.open(whatsappUrl, '_blank');
