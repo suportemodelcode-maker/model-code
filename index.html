@@ -28,7 +28,7 @@
     }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white relative">
 
   <div class="fixed inset-0 -z-10 bg-slate-950 pointer-events-none">
     <svg width="100%" height="100%">
@@ -105,41 +105,67 @@
     <section id="solucoes" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-850">
       <div class="text-center mb-12">
         <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">O Que Construímos</h2>
-        <p class="text-sm text-slate-400 mt-2">Tecnologia prática focada em rentabilidade e produtividade operacional.</p>
+        <p class="text-sm text-slate-400 mt-2">Tecnologia prática com impacto real na rotina do seu negócio.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
-          <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">01 / Presença Digital</div>
-          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Sites & Landing Pages</h3>
-          <p class="text-sm text-slate-400 leading-relaxed">
-            Páginas modernas, ultra-rápidas e otimizadas para captação de clientes e validação de produtos para prestadores de serviço e empresas.
-          </p>
+        
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)] flex flex-col justify-between">
+          <div>
+            <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">01 / Presença Digital</div>
+            <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Sites & Landing Pages</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+              Páginas modernas, ultra-rápidas e otimizadas para captação direta de clientes e validação de produtos.
+            </p>
+          </div>
+          <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Propostas em PDF estático e perda de clientes por falta de canal profissional online.</div>
+            <div class="text-cyan-300"><span class="font-bold">Depois:</span> Site no ar com alta conversão e direcionamento direto para seu WhatsApp.</div>
+          </div>
         </div>
 
-        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)]">
-          <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">02 / Mobilidade & Acesso</div>
-          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Aplicativos Mobile & PWA</h3>
-          <p class="text-sm text-slate-400 leading-relaxed">
-            Apps leves e funcionais que rodam no celular ou no navegador sem necessidade de downloads pesados, prontos para uso em campo ou escritório.
-          </p>
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)] flex flex-col justify-between">
+          <div>
+            <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">02 / Mobilidade & Acesso</div>
+            <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Aplicativos Mobile & PWA</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+              Apps que rodam no celular ou navegador sem a necessidade de downloads pesados, prontos para uso em campo ou escritório.
+            </p>
+          </div>
+          <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Equipe externa anotando dados em pranchetas de papel ou mensagens soltas.</div>
+            <div class="text-purple-300"><span class="font-bold">Depois:</span> App exclusivo no smartphone com formulários padronizados e sincronização em nuvem.</div>
+          </div>
         </div>
 
-        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400/50 hover:bg-gradient-to-br hover:from-cyan-900/10 hover:to-purple-900/10 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
-          <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">03 / Gestão Centralizada</div>
-          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Painéis & Dashboards</h3>
-          <p class="text-sm text-slate-400 leading-relaxed">
-            Sistemas internos de controle para estoque, financeiro, métricas operacionais e bancos de dados integrados (Supabase/Firebase).
-          </p>
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400/50 hover:bg-gradient-to-br hover:from-cyan-900/10 hover:to-purple-900/10 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)] flex flex-col justify-between">
+          <div>
+            <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">03 / Gestão Centralizada</div>
+            <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Painéis & Dashboards</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+              Sistemas internos de controle para estoque, financeiro, métricas operacionais e bancos de dados em tempo real.
+            </p>
+          </div>
+          <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas gastas cruzando planilhas desatualizadas para entender o faturamento do mês.</div>
+            <div class="text-cyan-300"><span class="font-bold">Depois:</span> Dashboard centralizado com gráficos automáticos e controle total em tempo real.</div>
+          </div>
         </div>
 
-        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)]">
-          <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">04 / Produtividade & IA</div>
-          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Automações & Scripts</h3>
-          <p class="text-sm text-slate-400 leading-relaxed">
-            Eliminação total de tarefas repetitivas integrando planilhas, disparos de e-mails, alertas inteligentes, APIs e scripts técnicos customizados.
-          </p>
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)] flex flex-col justify-between">
+          <div>
+            <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">04 / Produtividade & IA</div>
+            <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Automações & Scripts</h3>
+            <p class="text-sm text-slate-400 leading-relaxed mb-4">
+              Eliminação de tarefas manuais integrando planilhas, alertas de e-mail, APIs e rotinas técnicas programadas.
+            </p>
+          </div>
+          <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas diárias copiando linhas de tabelas e enviando e-mails manuais repetitivos.</div>
+            <div class="text-purple-300"><span class="font-bold">Depois:</span> Robô executa o processo em 2 segundos sem erro humano e sem intervenção manual.</div>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -159,6 +185,13 @@
   <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono">
     &copy; 2026 ModelCode. Todos os direitos reservados.
   </footer>
+
+  <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20ModelCode%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-white p-3.5 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all transform hover:scale-110 flex items-center justify-center group">
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold text-slate-950 px-0 group-hover:px-2">Falar no WhatsApp</span>
+    <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
 
   <div id="diagnosticModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
     <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-[0_0_35px_rgba(168,85,247,0.25)] text-left">
@@ -201,7 +234,7 @@
 
         <div>
           <label for="gargaloInput" class="block text-xs font-semibold text-slate-300 mb-1">2. Qual o principal problema ou objetivo a resolver?</label>
-          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso automatizar planilhas manuais ou criar um painel para clientes..." class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
+          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para minha barbearia com agendamento..." class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
         </div>
 
         <div>
@@ -233,14 +266,12 @@
       document.body.classList.remove('overflow-hidden');
     }
 
-    // Fecha o modal ao clicar fora do conteúdo
     document.getElementById('diagnosticModal').addEventListener('click', function(e) {
       if (e.target === this) {
         closeModal();
       }
     });
 
-    // Fecha ao pressionar ESC
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') {
         closeModal();
@@ -254,14 +285,16 @@
       const gargalo = document.getElementById('gargaloInput').value.trim();
       const prazo = document.getElementById('prazoSelect').value;
 
-      const message = `Olá! Preenchi o diagnóstico no site da ModelCode:\n\n` +
-                      `📌 *Demanda:* ${type}\n` +
-                      `⚠️ *Gargalo/Objetivo:* ${gargalo}\n` +
-                      `⏱️ *Prazo:* ${prazo}\n\n` +
-                      `Gostaria de avaliar a viabilidade técnica e proposta.`;
+      // Mensagem limpa e sem emojis de 4-bytes para não corromper no WhatsApp
+      const message = 
+        "*NOVO PROJETO | ModelCode*\n\n" +
+        "• *Demanda:* " + type + "\n" +
+        "• *Objetivo:* " + gargalo + "\n" +
+        "• *Prazo:* " + prazo + "\n\n" +
+        "Olá! Gostaria de avaliar a viabilidade técnica e proposta.";
 
       const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/5551995738595?text=${encodedMessage}`;
+      const whatsappUrl = "https://wa.me/5551995738595?text=" + encodedMessage;
 
       window.open(whatsappUrl, '_blank');
       closeModal();
