@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-PT" class="scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>ModelCode | Desenvolvimento de Software, Apps e Automação</title>
   
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   
+  <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <style>
@@ -47,6 +50,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white relative">
 
+  <!-- Fundo Dinâmico Hexagonal -->
   <div class="fixed inset-0 -z-10 bg-slate-950 pointer-events-none">
     <svg width="100%" height="100%">
       <pattern id="hexNetwork" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -59,6 +63,7 @@
     </svg>
   </div>
 
+  <!-- Header -->
   <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-40">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -82,16 +87,17 @@
 
   <main class="flex-grow">
     
+    <!-- Hero Section -->
     <section class="max-w-5xl mx-auto px-6 pt-24 pb-12 text-center" data-aos="zoom-in" data-aos-duration="800">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/80 text-xs font-semibold tracking-wide text-cyan-300 mb-8 shadow-[0_0_12px_rgba(34,211,238,0.2)]">
         <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
         Engenharia de Software & Automação Inteligente
       </div>
       <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight md:leading-tight">
-        Aumente o lucro da sua operação com Sistemas <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 filter drop-shadow-[0_0_15px_rgba(168,85,247,0.7)]">à Medida</span>.
+        Aumente o lucro da sua operação com Sistemas <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 filter drop-shadow-[0_0_15px_rgba(168,85,247,0.7)]">Sob Medida</span>.
       </h1>
       <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        Criamos ecossistemas digitais completos: aplicações móveis intuitivas, painéis de gestão centralizados, sites de alta conversão e automações de fluxo de trabalho.
+        Criamos ecossistemas digitais completos: aplicativos móveis intuitivos, painéis de gestão centralizados, sites de alta conversão e automações de fluxo de trabalho.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="#solucoes" class="px-8 py-3.5 rounded-md text-sm font-semibold border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
@@ -103,6 +109,7 @@
       </div>
     </section>
 
+    <!-- Marquee de Tecnologias -->
     <section class="py-10 border-y border-slate-800/50 bg-slate-900/30" data-aos="fade-up" data-aos-delay="200">
       <div class="max-w-6xl mx-auto px-6">
         <p class="text-center text-xs font-bold text-slate-500 uppercase tracking-widest mb-6">Tecnologias & Integrações de Alta Performance</p>
@@ -129,6 +136,7 @@
       </div>
     </section>
 
+    <!-- Soluções Técnicas com Imagens Corrigidas -->
     <section id="solucoes" class="max-w-7xl mx-auto px-6 py-20">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">O Que Construímos</h2>
@@ -137,6 +145,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
+        <!-- Card 1 -->
         <div class="neon-border rounded-2xl bg-slate-900/60 p-[2px] transition-all hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden relative">
             <div class="h-40 overflow-hidden relative">
@@ -151,12 +160,13 @@
               </div>
               <div class="bg-slate-900 border border-slate-800 p-3 rounded-lg space-y-2 text-xs">
                 <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Vendas perdidas por depender apenas de redes sociais.</div>
-                <div class="text-cyan-300"><span class="font-bold">Depois:</span> Máquina de vendas online a rodar 24h.</div>
+                <div class="text-cyan-300"><span class="font-bold">Depois:</span> Máquina de vendas online rodando 24h.</div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Card 2 -->
         <div class="neon-border rounded-2xl bg-slate-900/60 p-[2px] transition-all hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="200">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden relative">
             <div class="h-40 overflow-hidden relative">
@@ -166,17 +176,18 @@
             <div class="p-6 flex flex-col justify-between flex-grow relative z-20 -mt-6">
               <div>
                 <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">02 / Mobilidade</div>
-                <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Aplicações & PWA</h3>
-                <p class="text-sm text-slate-400 leading-relaxed mb-4">Aplicações nativas ou web para gestão de equipas externas e interação.</p>
+                <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Aplicativos & PWA</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">Apps que rodam no celular ou navegador sem a necessidade de downloads pesados.</p>
               </div>
               <div class="bg-slate-900 border border-slate-800 p-3 rounded-lg space-y-2 text-xs">
-                <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Dados soltos em papel e mensagens de áudio.</div>
-                <div class="text-purple-300"><span class="font-bold">Depois:</span> App no telemóvel com formulários integrados.</div>
+                <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Equipe externa anotando dados em papel ou enviando mensagens soltas.</div>
+                <div class="text-purple-300"><span class="font-bold">Depois:</span> App exclusivo com formulários padronizados e sincronização na nuvem.</div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Card 3 -->
         <div class="neon-border rounded-2xl bg-slate-900/60 p-[2px] transition-all hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="300">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden relative">
             <div class="h-40 overflow-hidden relative">
@@ -186,32 +197,33 @@
             <div class="p-6 flex flex-col justify-between flex-grow relative z-20 -mt-6">
               <div>
                 <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">03 / Gestão</div>
-                <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Painéis de Controlo</h3>
-                <p class="text-sm text-slate-400 leading-relaxed mb-4">Sistemas de controlo de stock, finanças e métricas ligados a bases de dados.</p>
+                <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Painéis de Controle</h3>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">Sistemas internos de controle para estoque, finanças e métricas conectados a bancos de dados em tempo real.</p>
               </div>
               <div class="bg-slate-900 border border-slate-800 p-3 rounded-lg space-y-2 text-xs">
-                <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Planilhas confusas e dados divergentes.</div>
-                <div class="text-cyan-300"><span class="font-bold">Depois:</span> Dashboard central com gráficos automáticos.</div>
+                <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas gastas cruzando planilhas desatualizadas para entender o mês.</div>
+                <div class="text-cyan-300"><span class="font-bold">Depois:</span> Dashboard centralizado com gráficos automáticos e controle total.</div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Card 4 -->
         <div class="neon-border rounded-2xl bg-slate-900/60 p-[2px] transition-all hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="400">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden relative">
             <div class="h-40 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Automações">
+              <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Automações">
             </div>
             <div class="p-6 flex flex-col justify-between flex-grow relative z-20 -mt-6">
               <div>
                 <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">04 / Produtividade</div>
-                <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Automações</h3>
+                <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Automações & Scripts</h3>
                 <p class="text-sm text-slate-400 leading-relaxed mb-4">Scripts que conectam ferramentas via API para zerar o trabalho manual e repetitivo.</p>
               </div>
               <div class="bg-slate-900 border border-slate-800 p-3 rounded-lg space-y-2 text-xs">
-                <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas a copiar dados manualmente.</div>
-                <div class="text-purple-300"><span class="font-bold">Depois:</span> Robô executa o processo sem falhas.</div>
+                <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas copiando dados manualmente e enviando e-mails repetitivos.</div>
+                <div class="text-purple-300"><span class="font-bold">Depois:</span> Robô executa o processo instantaneamente sem falhas.</div>
               </div>
             </div>
           </div>
@@ -220,27 +232,29 @@
       </div>
     </section>
 
+    <!-- Cases de Sucesso com Imagens Corrigidas -->
     <section id="cases" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-850">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Estudos de Caso</h2>
-        <p class="text-base text-slate-400 mt-3">Sistemas validados a rodar em operações reais, com impacto direto no lucro.</p>
+        <p class="text-base text-slate-400 mt-3">Sistemas validados rodando em operações reais, com impacto direto no lucro.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
+        <!-- Case 1 -->
         <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl group hover:-translate-y-1 transition-transform" data-aos="fade-right">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden">
             <div class="h-56 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"></div>
-              <img src="https://images.unsplash.com/photo-1521590838700-b22fa41f1710?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Barbearia">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Barbearia">
             </div>
             <div class="p-6 md:p-8 flex flex-col justify-between flex-grow relative z-20 -mt-10">
               <div>
                 <span class="inline-block px-3 py-1 bg-pink-950 text-pink-400 border border-pink-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Agendamento & Serviços</span>
                 <h3 class="text-xl font-bold text-white mb-4 font-montserrat">Sistema de Reservas (Barbearias/Estéticas)</h3>
                 <div class="space-y-4 text-sm text-slate-300">
-                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Perda de clientes pela demora no atendimento via WhatsApp e agenda com "buracos" por esquecimento.</p>
-                  <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Portal web onde o cliente acede, escolhe o horário disponível e recebe lembretes automáticos no WhatsApp.</p>
+                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Barbearias e clínicas perdendo clientes por demora no atendimento via WhatsApp e agenda com buracos por esquecimento.</p>
+                  <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Portal web onde o cliente acessa, escolhe o horário disponível e recebe lembretes automáticos no WhatsApp.</p>
                 </div>
               </div>
               <div class="mt-6 pt-6 border-t border-slate-800">
@@ -250,41 +264,43 @@
           </div>
         </div>
 
+        <!-- Case 2 -->
         <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl group hover:-translate-y-1 transition-transform" data-aos="fade-left">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden">
             <div class="h-56 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"></div>
-              <img src="https://images.unsplash.com/photo-1619642751034-765f048dc462?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Oficina Automotiva">
+              <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Oficina Automotiva">
             </div>
             <div class="p-6 md:p-8 flex flex-col justify-between flex-grow relative z-20 -mt-10">
               <div>
                 <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Mecânica & Manutenção</span>
-                <h3 class="text-xl font-bold text-white mb-4 font-montserrat">App de Controlo e Rastreio de Serviços</h3>
+                <h3 class="text-xl font-bold text-white mb-4 font-montserrat">App de Controle e Rastreio de Serviços</h3>
                 <div class="space-y-4 text-sm text-slate-300">
-                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Oficina desorganizada com fluxo intenso de chamadas de clientes a perguntar pelo estado do veículo.</p>
+                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Oficina desorganizada com fluxo intenso de ligações de clientes perguntando pelo status do veículo.</p>
                   <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Painel interno para atualização de status (Ex: Em análise, Aguardando peça) e link de rastreio em tempo real para o cliente.</p>
                 </div>
               </div>
               <div class="mt-6 pt-6 border-t border-slate-800">
-                <p class="text-cyan-400 font-semibold text-sm"><strong class="text-white">Resultado:</strong> Fim das chamadas repetitivas, equipa focada na execução e alto nível de transparência e fidelização.</p>
+                <p class="text-cyan-400 font-semibold text-sm"><strong class="text-white">Resultado:</strong> Fim das ligações repetitivas, equipe focada na execução e alto nível de transparência e fidelização.</p>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Case 3 -->
         <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl group hover:-translate-y-1 transition-transform" data-aos="fade-right">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden">
             <div class="h-56 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"></div>
-              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Dashboard Financeiro">
+              <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Dashboard Financeiro">
             </div>
             <div class="p-6 md:p-8 flex flex-col justify-between flex-grow relative z-20 -mt-10">
               <div>
                 <span class="inline-block px-3 py-1 bg-cyan-950 text-cyan-400 border border-cyan-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Gestão & Finanças</span>
                 <h3 class="text-xl font-bold text-white mb-4 font-montserrat">Automação de Relatórios Financeiros</h3>
                 <div class="space-y-4 text-sm text-slate-300">
-                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Uma clínica passava mais de 20 horas por semana a extrair informações de três sistemas diferentes para fechar o caixa.</p>
-                  <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Script customizado que liga as APIs dos sistemas diretamente a um Dashboard seguro no navegador do diretor.</p>
+                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Uma clínica passava mais de 20 horas por semana cruzando dados de pagamentos, extraindo informações de três sistemas diferentes para fechar o caixa.</p>
+                  <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Script customizado que conecta as APIs dos sistemas diretamente a um Dashboard seguro no navegador do diretor.</p>
                 </div>
               </div>
               <div class="mt-6 pt-6 border-t border-slate-800">
@@ -294,19 +310,20 @@
           </div>
         </div>
 
+        <!-- Case 4 -->
         <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl group hover:-translate-y-1 transition-transform" data-aos="fade-left">
           <div class="bg-slate-950 rounded-xl h-full flex flex-col overflow-hidden">
             <div class="h-56 overflow-hidden relative">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"></div>
-              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Operação Logística">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=500&fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Operação Logística">
             </div>
             <div class="p-6 md:p-8 flex flex-col justify-between flex-grow relative z-20 -mt-10">
               <div>
                 <span class="inline-block px-3 py-1 bg-purple-950 text-purple-400 border border-purple-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Operação Logística</span>
-                <h3 class="text-xl font-bold text-white mb-4 font-montserrat">App de Controlo para Equipa Externa</h3>
+                <h3 class="text-xl font-bold text-white mb-4 font-montserrat">App de Controle para Equipe Externa</h3>
                 <div class="space-y-4 text-sm text-slate-300">
-                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Empresa de manutenção perdia ordens de serviço em papel e os técnicos esqueciam-se de anexar fotos das instalações.</p>
-                  <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Uma Aplicação (PWA) de carregamento rápido. O técnico preenche os dados offline e o sistema sincroniza com a matriz.</p>
+                  <p><strong class="text-rose-400 block mb-1">O Cenário:</strong> Empresa de manutenção perdia ordens de serviço em papel e os técnicos esqueciam de anexar fotos das instalações concluídas.</p>
+                  <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Um Aplicativo Web Progressivo (PWA) de carregamento rápido. O técnico preenche os dados offline e o sistema sincroniza com a matriz assim que detecta internet.</p>
                 </div>
               </div>
               <div class="mt-6 pt-6 border-t border-slate-800">
@@ -319,6 +336,7 @@
       </div>
     </section>
 
+    <!-- Grade de Depoimentos Expansiva -->
     <section id="depoimentos" class="max-w-7xl mx-auto px-6 py-20 border-t border-slate-850">
       <div class="text-center mb-16" data-aos="fade-up">
         <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">O Que Dizem Nossos Parceiros</h2>
@@ -327,6 +345,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         
+        <!-- Review 1 -->
         <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition-transform" data-aos="zoom-in" data-aos-delay="100">
           <div class="flex text-amber-400 mb-3 text-lg">★★★★★</div>
           <p class="text-sm text-slate-300 italic mb-6">"O fechamento financeiro levava 3 dias cruzando planilhas, hoje gera em um clique. Retorno do investimento no primeiro mês."</p>
@@ -336,6 +355,7 @@
           </div>
         </div>
 
+        <!-- Review 2 -->
         <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition-transform" data-aos="zoom-in" data-aos-delay="200">
           <div class="flex text-amber-400 mb-3 text-lg">★★★★★</div>
           <p class="text-sm text-slate-300 italic mb-6">"O app de agendamento zerou nossos erros. O cliente agenda sozinho de madrugada e nosso time foca apenas em executar o serviço."</p>
@@ -345,6 +365,7 @@
           </div>
         </div>
 
+        <!-- Review 3 -->
         <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition-transform" data-aos="zoom-in" data-aos-delay="300">
           <div class="flex text-amber-400 mb-3 text-lg">★★★★★</div>
           <p class="text-sm text-slate-300 italic mb-6">"Tínhamos um site bonito, mas não vendia. A ModelCode criou uma máquina focada em conversão integrada direto no CRM."</p>
@@ -354,6 +375,7 @@
           </div>
         </div>
 
+        <!-- Review 4 -->
         <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition-transform" data-aos="zoom-in" data-aos-delay="400">
           <div class="flex text-amber-400 mb-3 text-lg">★★★★★</div>
           <p class="text-sm text-slate-300 italic mb-6">"Excelente capacidade analítica. Entenderam perfeitamente as regras de negócio da oficina e desenharam a solução exata."</p>
@@ -363,18 +385,20 @@
           </div>
         </div>
 
+        <!-- Review 5 -->
         <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition-transform" data-aos="zoom-in" data-aos-delay="500">
           <div class="flex text-amber-400 mb-3 text-lg">★★★★★</div>
-          <p class="text-sm text-slate-300 italic mb-6">"Fim das pranchetas de papel para a equipa de rua. A aplicação mudou o nosso patamar operacional e a sincronização é impecável."</p>
+          <p class="text-sm text-slate-300 italic mb-6">"Fim das pranchetas de papel para a equipe de rua. O PWA mudou nosso patamar operacional e a sincronização é impecável."</p>
           <div class="flex items-center gap-3">
             <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=faces" alt="Mariana" class="w-10 h-10 rounded-full border border-slate-700">
             <div><h4 class="text-sm font-bold text-white">Mariana Torres</h4><p class="text-xs text-slate-500">Logística</p></div>
           </div>
         </div>
 
+        <!-- Review 6 -->
         <div class="bg-slate-900/50 border border-slate-800 p-6 rounded-2xl hover:-translate-y-1 transition-transform" data-aos="zoom-in" data-aos-delay="600">
           <div class="flex text-amber-400 mb-3 text-lg">★★★★★</div>
-          <p class="text-sm text-slate-300 italic mb-6">"Profissionais de ponta. Conseguiram otimizar um processo complexo que a nossa equipa interna não dava conta. Recomendo."</p>
+          <p class="text-sm text-slate-300 italic mb-6">"Profissionais de ponta. Conseguiram otimizar um processo complexo que a nossa equipe interna não dava conta. Recomendo."</p>
           <div class="flex items-center gap-3">
             <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=100&h=100&fit=crop&crop=faces" alt="Lucas" class="w-10 h-10 rounded-full border border-slate-700">
             <div><h4 class="text-sm font-bold text-white">Lucas Pereira</h4><p class="text-xs text-slate-500">Tech Lead</p></div>
@@ -384,9 +408,10 @@
       </div>
     </section>
 
+    <!-- Contato CTA -->
     <section id="contato" class="max-w-4xl mx-auto px-6 py-20 text-center border-t border-slate-850" data-aos="fade-up">
       <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-12 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
-        <h2 class="text-3xl font-bold text-white mb-4">Pronto para digitalizar o seu processo?</h2>
+        <h2 class="text-3xl font-bold text-white mb-4">Pronto para digitalizar seu processo?</h2>
         <p class="text-slate-400 max-w-md mx-auto mb-8 text-base">
           Descreva a operação ou o gargalo do seu negócio. Desenvolvemos a arquitetura ideal e apresentamos a viabilidade técnica.
         </p>
@@ -401,21 +426,23 @@
     &copy; 2026 ModelCode. Todos os direitos reservados.
   </footer>
 
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
   <a href="https://api.whatsapp.com/send?phone=5551995738595&text=Ol%C3%A1%2C%20estou%20no%20site%20da%20ModelCode%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-white p-3.5 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all transform hover:scale-110 flex items-center justify-center group">
     <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold text-slate-950 px-0 group-hover:px-2">WhatsApp Direto</span>
     <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
 
+  <!-- MODAL DE DIAGNÓSTICO RÁPIDO -->
   <div id="diagnosticModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
     <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-[0_0_35px_rgba(168,85,247,0.25)] text-left">
       <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white transition p-1"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
       <div class="mb-6">
         <span class="text-xs font-bold tracking-wider uppercase text-cyan-400">Diagnóstico Rápido</span>
-        <h3 class="text-xl font-bold text-white mt-1">Estruture a sua demanda</h3>
+        <h3 class="text-xl font-bold text-white mt-1">Estruture sua demanda</h3>
       </div>
       <form onsubmit="sendDiagnosticToWhatsApp(event)" class="space-y-4">
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que precisa de desenvolver?</label>
+          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que você precisa desenvolver?</label>
           <div class="grid grid-cols-2 gap-2 text-xs">
             <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-cyan-400 cursor-pointer transition">
               <input type="radio" name="projectType" value="Site / Landing Page" checked class="text-cyan-500 focus:ring-0"><span class="text-slate-200">Site / Landing Page</span>
@@ -433,14 +460,14 @@
         </div>
         <div>
           <label for="gargaloInput" class="block text-xs font-semibold text-slate-300 mb-1">2. Qual o principal problema ou objetivo a resolver?</label>
-          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de uma aplicação para a minha barbearia com agendamento..." class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
+          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para minha barbearia com agendamento..." class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
         </div>
         <div>
           <label for="prazoSelect" class="block text-xs font-semibold text-slate-300 mb-1">3. Qual a urgência do projeto?</label>
           <select id="prazoSelect" class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 focus:outline-none focus:border-cyan-400 transition">
             <option value="Urgente (início imediato)">Urgente (início imediato)</option>
             <option value="Próximos 30 dias">Próximos 30 dias</option>
-            <option value="Apenas a pesquisar / Planear">Apenas a pesquisar / Planear</option>
+            <option value="Apenas pesquisando / Planejando">Apenas pesquisando / Planejando</option>
           </select>
         </div>
         <button type="submit" class="w-full py-3 mt-2 rounded-lg text-sm font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7] cursor-pointer">
@@ -450,6 +477,7 @@
     </div>
   </div>
 
+  <!-- Scripts: AOS Init & Modal Control -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, duration: 800, offset: 100 });
