@@ -172,10 +172,43 @@
     <section id="cases" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-850">
       <div class="text-center mb-12">
         <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Estudos de Caso</h2>
-        <p class="text-sm text-slate-400 mt-2">Veja como aplicamos tecnologia para gerar lucro e produtividade.</p>
+        <p class="text-sm text-slate-400 mt-2">Veja como aplicamos tecnologia para gerar lucro e produtividade em diferentes setores.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl">
+          <div class="bg-slate-950 p-6 md:p-8 rounded-xl h-full flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-3 py-1 bg-pink-950 text-pink-400 border border-pink-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Agendamento & Vendas</span>
+              <h3 class="text-xl font-bold text-white mb-4 font-montserrat">Sistema de Agendamento para Barbearias e Estéticas</h3>
+              <div class="space-y-4 text-sm text-slate-300">
+                <p><strong class="text-rose-400 block mb-1">O Desafio:</strong> Clientes desistiam de marcar horários pela demora no atendimento via WhatsApp, e a agenda ficava com "buracos" por esquecimento.</p>
+                <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Criamos um portal de agendamento online 24h. O próprio cliente acessa o link, escolhe o horário disponível e recebe lembretes automáticos no WhatsApp.</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-800">
+              <p class="text-cyan-400 font-semibold"><strong class="text-white">Resultado:</strong> Agenda otimizada sem intervenção humana, redução de 90% nas faltas e aumento imediato no faturamento diário.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl">
+          <div class="bg-slate-950 p-6 md:p-8 rounded-xl h-full flex flex-col justify-between">
+            <div>
+              <span class="inline-block px-3 py-1 bg-emerald-950 text-emerald-400 border border-emerald-800 rounded-full text-xs font-bold uppercase tracking-wider mb-4">Oficinas & Serviços</span>
+              <h3 class="text-xl font-bold text-white mb-4 font-montserrat">Controle de Serviços e Agendamento Automotivo</h3>
+              <div class="space-y-4 text-sm text-slate-300">
+                <p><strong class="text-rose-400 block mb-1">O Desafio:</strong> Desorganização no pátio da oficina, clientes ligando o tempo todo para saber do carro e dificuldade em encaixar manutenções de rotina.</p>
+                <p><strong class="text-purple-400 block mb-1">A Solução:</strong> Um painel integrado onde o cliente agenda a revisão online e consegue acompanhar o status do veículo pelo celular (ex: "Em análise", "Aguardando peça", "Pronto").</p>
+              </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-slate-800">
+              <p class="text-cyan-400 font-semibold"><strong class="text-white">Resultado:</strong> Fluxo de veículos organizado, mecânicos 100% focados no serviço e clientes fidelizados pela transparência.</p>
+            </div>
+          </div>
+        </div>
+
         <div class="neon-border bg-slate-900/60 p-[2px] rounded-2xl">
           <div class="bg-slate-950 p-6 md:p-8 rounded-xl h-full flex flex-col justify-between">
             <div>
@@ -207,6 +240,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -290,7 +324,7 @@
       <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-10 rounded-2xl">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Precisa de um site, app, painel ou automação?</h2>
         <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm">
-          Descreva a operação ou o gargalo do seu negócio. Desenvolvemos a arquitetura ideal para colocar sua solução no ar rapidamente.
+          Descreva a operação ou o gargalo do seu negócio. Desenvolvemos a arquitetura ideal para colocar a sua solução no ar rapidamente.
         </p>
         <button onclick="openModal()" class="cursor-pointer inline-flex items-center gap-2 px-8 py-4 rounded-md text-base font-bold text-slate-950 bg-green-500 hover:bg-green-400 transition-all drop-shadow-[0_0_15px_#22c55e]">
           Iniciar Diagnóstico Técnico
@@ -321,13 +355,13 @@
 
       <div class="mb-6">
         <span class="text-xs font-bold tracking-wider uppercase text-cyan-400">Diagnóstico Rápido</span>
-        <h3 class="text-xl font-bold text-white mt-1">Estruture sua demanda</h3>
+        <h3 class="text-xl font-bold text-white mt-1">Estruture a sua demanda</h3>
         <p class="text-xs text-slate-400 mt-1">Preencha os dados abaixo para direcionarmos o diagnóstico direto ao seu WhatsApp.</p>
       </div>
 
       <form onsubmit="sendDiagnosticToWhatsApp(event)" class="space-y-4">
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que você precisa desenvolver?</label>
+          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que precisa desenvolver?</label>
           <div class="grid grid-cols-2 gap-2 text-xs">
             <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-cyan-400 cursor-pointer transition">
               <input type="radio" name="projectType" value="Site / Landing Page" checked class="text-cyan-500 focus:ring-0">
@@ -350,7 +384,7 @@
 
         <div>
           <label for="gargaloInput" class="block text-xs font-semibold text-slate-300 mb-1">2. Qual o principal problema ou objetivo a resolver?</label>
-          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para minha barbearia com agendamento..." class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
+          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para a minha barbearia com agendamento..." class="w-full px-3 py-2 text-base sm:text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
         </div>
 
         <div>
@@ -402,7 +436,9 @@
       const prazo = document.getElementById('prazoSelect').value;
 
       const rawMessage = `🚀 *NOVO PROJETO | ModelCode*\n\n💻 *Demanda:* ${type}\n🎯 *Objetivo:* ${gargalo}\n⏳ *Prazo:* ${prazo}\n\nOlá! Gostaria de avaliar a viabilidade técnica e proposta.`;
+
       const encodedText = encodeURIComponent(rawMessage);
+
       const whatsappUrl = `https://api.whatsapp.com/send?phone=5551995738595&text=${encodedText}`;
 
       window.open(whatsappUrl, '_blank');
