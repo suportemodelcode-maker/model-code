@@ -3,28 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Model Code | Soluções em Engenharia e Automação de Software</title>
+  <title>ModelCode | Engenharia e Automação de Software</title>
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+    .neon-border {
+      position: relative;
+    }
+    .neon-border::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      padding: 2px;
+      background: linear-gradient(135deg, #22d3ee, #a855f7);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.5));
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white">
 
+  <!-- Fundo Hexagonal de Rede Sutil -->
+  <div class="fixed inset-0 -z-10 bg-slate-950">
+    <svg width="100%" height="100%">
+      <pattern id="hexNetwork" width="100" height="100" patternUnits="userSpaceOnUse">
+        <!-- Rede sutil de linhas conectadas, ciano para roxo -->
+        <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0ZM50 0L50 100M93.3 25L6.7 75M93.3 75L6.7 25" stroke="rgba(34, 211, 238, 0.15)" stroke-width="0.5"/>
+        <circle cx="50" cy="0" r="1" fill="rgba(34, 211, 238, 0.3)" style="filter: drop-shadow(0 0 2px rgba(34, 211, 238, 0.5))"/>
+        <circle cx="93.3" cy="25" r="1" fill="rgba(34, 211, 238, 0.3)" style="filter: drop-shadow(0 0 2px rgba(34, 211, 238, 0.5))"/>
+        <circle cx="93.3" cy="75" r="1" fill="rgba(168, 85, 247, 0.3)" style="filter: drop-shadow(0 0 2px rgba(168, 85, 247, 0.5))"/>
+        <circle cx="50" cy="100" r="1" fill="rgba(168, 85, 247, 0.3)" style="filter: drop-shadow(0 0 2px rgba(168, 85, 247, 0.5))"/>
+        <circle cx="6.7" cy="75" r="1" fill="rgba(168, 85, 247, 0.3)" style="filter: drop-shadow(0 0 2px rgba(168, 85, 247, 0.5))"/>
+        <circle cx="6.7" cy="25" r="1" fill="rgba(34, 211, 238, 0.3)" style="filter: drop-shadow(0 0 2px rgba(34, 211, 238, 0.5))"/>
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#hexNetwork)"/>
+    </svg>
+  </div>
+
   <!-- Header -->
   <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="w-3 h-3 rounded-full bg-cyan-400 animate-pulse"></div>
-        <span class="font-bold text-lg tracking-tight text-white font-mono">Model<span class="text-cyan-400">Code</span>_</span>
+      <div class="flex items-center gap-3">
+        <!-- Logotipo Hex e {V} (Ciano/Roxo) -->
+        <svg class="h-8 w-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Hexágono com gradiente -->
+          <defs>
+            <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#22d3ee" />
+              <stop offset="100%" stop-color="#a855f7" />
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0Z" stroke="url(#hexGradient)" stroke-width="2" filter="url(#glow)" />
+          <!-- { V } Central (Branco com brilho) -->
+          <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="28" fill="white" filter="url(#glow)">{V}</text>
+          <!-- Pontos da rede -->
+          <circle cx="50" cy="0" r="2" fill="#22d3ee" filter="url(#glow)"/>
+          <circle cx="93.3" cy="25" r="2" fill="#22d3ee" filter="url(#glow)"/>
+          <circle cx="93.3" cy="75" r="2" fill="#a855f7" filter="url(#glow)"/>
+          <circle cx="50" cy="100" r="2" fill="#a855f7" filter="url(#glow)"/>
+          <circle cx="6.7" cy="75" r="2" fill="#a855f7" filter="url(#glow)"/>
+          <circle cx="6.7" cy="25" r="2" fill="#22d3ee" filter="url(#glow)"/>
+        </svg>
+        <span class="font-bold text-lg tracking-tight text-white font-montserrat">ModelCode</span>
       </div>
-      <a href="#contato" class="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-slate-950 bg-cyan-400 rounded-md hover:bg-cyan-300 transition duration-150">
-        Falar com o Especialista
+      <a href="#contato" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 rounded-md hover:bg-cyan-300 transition duration-150 drop-shadow-[0_0_8px_#22d3ee]">
+        Falar com Especialista
       </a>
     </div>
   </header>
@@ -32,20 +91,20 @@
   <!-- Hero Section -->
   <main class="flex-grow">
     <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-800 bg-slate-900/60 text-xs font-mono text-cyan-400 mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-800 bg-slate-900/60 text-xs font-mono text-cyan-400 mb-8 drop-shadow-[0_0_5px_rgba(34,211,238,0.4)]">
         <span class="inline-block w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Otimização de Processos & Engenharia de Dados
       </div>
       <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight md:leading-tight">
-        Elimine gargalos operacionais com <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">automação sob medida</span>.
+        Elimine gargalos operacionais com <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 filter drop-shadow-[0_0_15px_rgba(168,85,247,0.7)]">automação sob medida</span>.
       </h1>
       <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
         Desenvolvemos ferramentas personalizadas, rotinas de integração de dados e sistemas internos para aumentar a produtividade e a margem operacional do seu negócio.
       </p>
-      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="#solucoes" class="px-6 py-3 rounded-md text-sm font-semibold border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
           Ver Soluções
         </a>
-        <a href="#contato" class="px-6 py-3 rounded-md text-sm font-semibold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition">
+        <a href="#contato" class="px-6 py-3 rounded-md text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7]">
           Solicitar Diagnóstico Técnico
         </a>
       </div>
@@ -59,28 +118,28 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <div class="p-6 rounded-lg border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition">
+        <!-- Card 1 (Ciano) -->
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
           <div class="text-cyan-400 text-sm font-mono mb-2">01 / Automações de Fluxo</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Google Apps Script & APIs</h3>
+          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Google Apps Script & APIs</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
             Elimine tarefas repetitivas integrando planilhas a alertas automáticos de e-mail, relatórios e controle operacional de inventário.
           </p>
         </div>
 
-        <!-- Card 2 -->
-        <div class="p-6 rounded-lg border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition">
-          <div class="text-cyan-400 text-sm font-mono mb-2">02 / Aplicações Sob Medida</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Sistemas & Painéis Web</h3>
+        <!-- Card 2 (Roxo) -->
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)]">
+          <div class="text-purple-400 text-sm font-mono mb-2">02 / Aplicações Sob Medida</div>
+          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Sistemas & Painéis Web</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
             Criação de painéis internos, interfaces operacionais e Progressive Web Apps com bancos de dados relacionais e em tempo real.
           </p>
         </div>
 
-        <!-- Card 3 -->
-        <div class="p-6 rounded-lg border border-slate-800 bg-slate-900/40 hover:border-slate-700 transition">
+        <!-- Card 3 (Ciano/Roxo) -->
+        <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400/50 hover:bg-gradient-to-br hover:from-cyan-900/10 hover:to-purple-900/10 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
           <div class="text-cyan-400 text-sm font-mono mb-2">03 / Scripts de Engenharia</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Otimização CAD & Computação</h3>
+          <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Otimização CAD & Computação</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
             Scripts customizados em Python para redução drástica do tempo de modelagem e extração de dados geométricos.
           </p>
@@ -96,7 +155,7 @@
           Apresente o seu problema. Mapeamos a melhor solução técnica em código ou banco de dados para a sua demanda.
         </p>
         <!-- Substitua pelo seu número no formato 55DDDNUMERO -->
-        <a href="https://wa.me/5551999999999?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20uma%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 rounded-md text-base font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition">
+        <a href="https://wa.me/5551999999999?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20uma%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-4 rounded-md text-base font-bold text-slate-950 bg-green-500 hover:bg-green-400 transition-all drop-shadow-[0_0_15px_#22c55e]">
           Iniciar Conversa via WhatsApp
         </a>
       </div>
@@ -105,7 +164,7 @@
 
   <!-- Footer -->
   <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono">
-    &copy; 2026 Model Code. Todos os direitos reservados.
+    &copy; 2026 ModelCode. Todos os direitos reservados.
   </footer>
 
 </body>
