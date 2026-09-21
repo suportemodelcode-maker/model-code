@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModelCode | Desenvolvimento de Software, Apps e Automação</title>
-  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
@@ -32,7 +30,6 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white relative">
 
-  <!-- Fundo Hexagonal de Rede Sutil -->
   <div class="fixed inset-0 -z-10 bg-slate-950 pointer-events-none">
     <svg width="100%" height="100%">
       <pattern id="hexNetwork" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -48,7 +45,6 @@
     </svg>
   </div>
 
-  <!-- Header -->
   <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-40">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -83,7 +79,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <main class="flex-grow">
     <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/80 text-xs font-semibold tracking-wide text-cyan-300 mb-8 shadow-[0_0_12px_rgba(34,211,238,0.2)]">
@@ -107,7 +102,6 @@
       </div>
     </section>
 
-    <!-- Soluções Técnicas com Antes vs. Depois -->
     <section id="solucoes" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-850">
       <div class="text-center mb-12">
         <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">O Que Construímos</h2>
@@ -115,8 +109,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Card 1 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)] flex flex-col justify-between">
           <div>
             <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">01 / Presença Digital</div>
@@ -131,60 +123,56 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)] flex flex-col justify-between">
           <div>
             <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">02 / Mobilidade & Acesso</div>
             <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Aplicativos Mobile & PWA</h3>
             <p class="text-sm text-slate-400 leading-relaxed mb-4">
-              Apps que rodam no celular ou navegador sem a necessidade de downloads pesados, prontos para uso em campo ou escritório.
+              Apps que rodam no telemóvel ou navegador sem a necessidade de downloads pesados.
             </p>
           </div>
           <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
-            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Equipe externa anotando dados em pranchetas de papel ou mensagens soltas.</div>
-            <div class="text-purple-300"><span class="font-bold">Depois:</span> App exclusivo no smartphone com formulários padronizados e sincronização em nuvem.</div>
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Equipe externa a anotar dados em papel ou mensagens soltas.</div>
+            <div class="text-purple-300"><span class="font-bold">Depois:</span> App exclusivo com formulários padronizados e sincronização na nuvem.</div>
           </div>
         </div>
 
-        <!-- Card 3 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400/50 hover:bg-gradient-to-br hover:from-cyan-900/10 hover:to-purple-900/10 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)] flex flex-col justify-between">
           <div>
             <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">03 / Gestão Centralizada</div>
             <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Painéis & Dashboards</h3>
             <p class="text-sm text-slate-400 leading-relaxed mb-4">
-              Sistemas internos de controle para estoque, financeiro, métricas operacionais e bancos de dados em tempo real.
+              Sistemas internos de controlo para stock, métricas operacionais e bases de dados em tempo real.
             </p>
           </div>
           <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
-            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas gastas cruzando planilhas desatualizadas para entender o faturamento do mês.</div>
-            <div class="text-cyan-300"><span class="font-bold">Depois:</span> Dashboard centralizado com gráficos automáticos e controle total em tempo real.</div>
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas gastas a cruzar planilhas para entender o mês.</div>
+            <div class="text-cyan-300"><span class="font-bold">Depois:</span> Dashboard centralizado com gráficos automáticos e controlo total.</div>
           </div>
         </div>
 
-        <!-- Card 4 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)] flex flex-col justify-between">
           <div>
             <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">04 / Produtividade & IA</div>
             <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Automações & Scripts</h3>
             <p class="text-sm text-slate-400 leading-relaxed mb-4">
-              Eliminação de tarefas manuais integrando planilhas, alertas de e-mail, APIs e rotinas técnicas programadas.
+              Eliminação de tarefas manuais integrando planilhas, alertas de e-mail e rotinas técnicas.
             </p>
           </div>
           <div class="bg-slate-950/70 p-3 rounded-lg border border-slate-800/80 space-y-2 text-xs">
-            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas diárias copiando linhas de tabelas e enviando e-mails manuais repetitivos.</div>
-            <div class="text-purple-300"><span class="font-bold">Depois:</span> Robô executa o processo em 2 segundos sem erro humano e sem intervenção manual.</div>
+            <div class="text-rose-400/90"><span class="font-bold">Antes:</span> Horas a copiar linhas de tabelas e a enviar e-mails repetitivos.</div>
+            <div class="text-purple-300"><span class="font-bold">Depois:</span> Robô executa o processo em 2 segundos sem erro humano.</div>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Contato -->
     <section id="contato" class="max-w-4xl mx-auto px-6 py-16 text-center">
       <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-10 rounded-2xl">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Precisa de um site, app, painel ou automação?</h2>
         <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm">
-          Descreva a operação ou o gargalo do seu negócio. Desenvolvemos a arquitetura ideal para colocar sua solução no ar rapidamente.
+          Descreva a operação ou o gargalo do seu negócio. Desenvolvemos a arquitetura ideal para colocar a sua solução no ar rapidamente.
         </p>
         <button onclick="openModal()" class="cursor-pointer inline-flex items-center gap-2 px-8 py-4 rounded-md text-base font-bold text-slate-950 bg-green-500 hover:bg-green-400 transition-all drop-shadow-[0_0_15px_#22c55e]">
           Iniciar Diagnóstico Técnico
@@ -193,12 +181,10 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono">
     &copy; 2026 ModelCode. Todos os direitos reservados.
   </footer>
 
-  <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
   <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20estou%20no%20site%20da%20ModelCode%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-400 text-white p-3.5 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.5)] transition-all transform hover:scale-110 flex items-center justify-center group">
     <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold text-slate-950 px-0 group-hover:px-2">Falar no WhatsApp</span>
     <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
@@ -206,7 +192,6 @@
     </svg>
   </a>
 
-  <!-- MODAL DE DIAGNÓSTICO RÁPIDO -->
   <div id="diagnosticModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
     <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-[0_0_35px_rgba(168,85,247,0.25)] text-left">
       
@@ -218,13 +203,13 @@
 
       <div class="mb-6">
         <span class="text-xs font-bold tracking-wider uppercase text-cyan-400">Diagnóstico Rápido</span>
-        <h3 class="text-xl font-bold text-white mt-1">Estruture sua demanda</h3>
+        <h3 class="text-xl font-bold text-white mt-1">Estruture a sua demanda</h3>
         <p class="text-xs text-slate-400 mt-1">Preencha os dados abaixo para direcionarmos o diagnóstico direto ao seu WhatsApp.</p>
       </div>
 
       <form onsubmit="sendDiagnosticToWhatsApp(event)" class="space-y-4">
         <div>
-          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que você precisa desenvolver?</label>
+          <label class="block text-xs font-semibold text-slate-300 mb-2">1. O que precisa de desenvolver?</label>
           <div class="grid grid-cols-2 gap-2 text-xs">
             <label class="flex items-center gap-2 p-2.5 rounded-lg border border-slate-800 bg-slate-950/60 hover:border-cyan-400 cursor-pointer transition">
               <input type="radio" name="projectType" value="Site / Landing Page" checked class="text-cyan-500 focus:ring-0">
@@ -247,7 +232,7 @@
 
         <div>
           <label for="gargaloInput" class="block text-xs font-semibold text-slate-300 mb-1">2. Qual o principal problema ou objetivo a resolver?</label>
-          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para minha barbearia com agendamento..." class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
+          <textarea id="gargaloInput" rows="2" required placeholder="Ex: Preciso de um aplicativo para a minha barbearia com agendamento..." class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-400 transition"></textarea>
         </div>
 
         <div>
@@ -255,7 +240,7 @@
           <select id="prazoSelect" class="w-full px-3 py-2 text-xs bg-slate-950 border border-slate-800 rounded-lg text-slate-100 focus:outline-none focus:border-cyan-400 transition">
             <option value="Urgente (início imediato)">Urgente (início imediato)</option>
             <option value="Próximos 30 dias">Próximos 30 dias</option>
-            <option value="Apenas pesquisando / Planejando">Apenas pesquisando / Planejando</option>
+            <option value="Apenas a pesquisar / Planear">Apenas a pesquisar / Planear</option>
           </select>
         </div>
 
@@ -294,19 +279,19 @@
     function sendDiagnosticToWhatsApp(event) {
       event.preventDefault();
 
-      const type = document.querySelector('input[name="projectType"]:checked').value;
-      const gargalo = document.getElementById('gargaloInput').value.trim();
-      const prazo = document.getElementById('prazoSelect').value;
+      const type = encodeURIComponent(document.querySelector('input[name="projectType"]:checked').value);
+      const gargalo = encodeURIComponent(document.getElementById('gargaloInput').value.trim());
+      const prazo = encodeURIComponent(document.getElementById('prazoSelect').value);
 
-      const message = 
-        "🚀 *NOVO PROJETO | ModelCode*\n\n" +
-        "💻 *Demanda:* " + type + "\n" +
-        "🎯 *Objetivo:* " + gargalo + "\n" +
-        "⏳ *Prazo:* " + prazo + "\n\n" +
-        "Olá! Gostaria de avaliar a viabilidade técnica e proposta.";
+      // Usando URL Encoding diretamente nos Emojis para garantir que o WhatsApp Web/Mobile os leia perfeitamente, ignorando a codificação do HTML.
+      const encodedText = 
+        "%F0%9F%9A%80 *NOVO PROJETO | ModelCode*%0A%0A" +
+        "%F0%9F%92%BB *Demanda:* " + type + "%0A" +
+        "%F0%9F%8E%AF *Objetivo:* " + gargalo + "%0A" +
+        "%E2%8F%B3 *Prazo:* " + prazo + "%0A%0A" +
+        "Ol%C3%A1! Gostaria de avaliar a viabilidade t%C3%A9cnica e proposta.";
 
-      const encodedMessage = encodeURIComponent(message);
-      const whatsappUrl = "https://wa.me/5551995738595?text=" + encodedMessage;
+      const whatsappUrl = "https://wa.me/5551995738595?text=" + encodedText;
 
       window.open(whatsappUrl, '_blank');
       closeModal();
