@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ModelCode | Engenharia e Automação de Software</title>
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
-    h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+    h1, h2, h3, .font-title { font-family: 'Montserrat', sans-serif; }
     .neon-border {
       position: relative;
     }
@@ -30,6 +32,7 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-white">
 
+  <!-- Fundo Hexagonal de Rede Sutil -->
   <div class="fixed inset-0 -z-10 bg-slate-950">
     <svg width="100%" height="100%">
       <pattern id="hexNetwork" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -45,9 +48,11 @@
     </svg>
   </div>
 
+  <!-- Header -->
   <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
+        <!-- Logotipo Hex e {V} -->
         <svg class="h-8 w-8" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -73,33 +78,37 @@
         </svg>
         <span class="font-bold text-lg tracking-tight text-white font-montserrat">ModelCode</span>
       </div>
-      <a href="https://wa.me/5551999767874?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20uma%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 rounded-md hover:bg-cyan-300 transition duration-150 drop-shadow-[0_0_8px_#22d3ee]">
+      <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20uma%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 rounded-md hover:bg-cyan-300 transition duration-150 drop-shadow-[0_0_8px_#22d3ee]">
         Falar com Especialista
       </a>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <main class="flex-grow">
     <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-800 bg-slate-900/60 text-xs font-mono text-cyan-400 mb-8 drop-shadow-[0_0_5px_rgba(34,211,238,0.4)]">
-        <span class="inline-block w-1.5 h-1.5 rounded-full bg-cyan-400"></span> Otimização de Processos & Engenharia de Dados
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-500/30 bg-slate-900/80 text-xs font-semibold tracking-wide text-cyan-300 mb-8 shadow-[0_0_12px_rgba(34,211,238,0.2)]">
+        <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        Otimização de Processos & Engenharia de Dados
       </div>
+
       <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white max-w-3xl mx-auto leading-tight md:leading-tight">
         Elimine gargalos operacionais com <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 filter drop-shadow-[0_0_15px_rgba(168,85,247,0.7)]">automação sob medida</span>.
       </h1>
-      <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto">
+      <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
         Desenvolvemos ferramentas personalizadas, rotinas de integração de dados e sistemas internos para aumentar a produtividade e a margem operacional do seu negócio.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="#solucoes" class="px-6 py-3 rounded-md text-sm font-semibold border border-slate-700 bg-slate-900 hover:bg-slate-800 transition">
           Ver Soluções
         </a>
-        <a href="https://wa.me/5551999767874?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20uma%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-md text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7]">
+        <a href="https://wa.me/5551995738595?text=Ol%C3%A1%2C%20gostaria%20de%20um%20diagn%C3%B3stico%20t%C3%A9cnico%20para%20uma%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-md text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-300 hover:to-purple-400 transition-all drop-shadow-[0_0_10px_#a855f7]">
           Solicitar Diagnóstico Técnico
         </a>
       </div>
     </section>
 
+    <!-- Soluções Técnicas -->
     <section id="solucoes" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-850">
       <div class="text-center mb-12">
         <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Capacidades Técnicas</h2>
@@ -107,24 +116,27 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400 hover:bg-cyan-900/20 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
-          <div class="text-cyan-400 text-sm font-mono mb-2">01 / Automações de Fluxo</div>
+          <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">01 / Automações de Fluxo</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Google Apps Script & APIs</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
             Elimine tarefas repetitivas integrando planilhas a alertas automáticos de e-mail, relatórios e controle operacional de inventário.
           </p>
         </div>
 
+        <!-- Card 2 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-purple-500 hover:bg-purple-900/20 transition-all drop-shadow-[0_0_8px_rgba(168,85,247,0.3)]">
-          <div class="text-purple-400 text-sm font-mono mb-2">02 / Aplicações Sob Medida</div>
+          <div class="text-purple-400 text-xs font-bold tracking-wider uppercase mb-2">02 / Aplicações Sob Medida</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Sistemas & Painéis Web</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
             Criação de painéis internos, interfaces operacionais e Progressive Web Apps com bancos de dados relacionais e em tempo real.
           </p>
         </div>
 
+        <!-- Card 3 -->
         <div class="neon-border p-6 rounded-lg border-2 border-slate-800 bg-slate-900/40 hover:border-cyan-400/50 hover:bg-gradient-to-br hover:from-cyan-900/10 hover:to-purple-900/10 transition-all drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]">
-          <div class="text-cyan-400 text-sm font-mono mb-2">03 / Scripts de Engenharia</div>
+          <div class="text-cyan-400 text-xs font-bold tracking-wider uppercase mb-2">03 / Scripts de Engenharia</div>
           <h3 class="text-lg font-bold text-white mb-2 font-montserrat">Otimização CAD & Computação</h3>
           <p class="text-sm text-slate-400 leading-relaxed">
             Scripts customizados em Python para redução drástica do tempo de modelagem e extração de dados geométricos.
@@ -133,6 +145,7 @@
       </div>
     </section>
 
+    <!-- Contato -->
     <section id="contato" class="max-w-4xl mx-auto px-6 py-16 text-center">
       <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-10 rounded-2xl">
         <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Tem um processo repetitivo para automatizar?</h2>
@@ -146,6 +159,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-600 font-mono">
     &copy; 2026 ModelCode. Todos os direitos reservados.
   </footer>
